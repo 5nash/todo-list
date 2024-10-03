@@ -13,7 +13,7 @@ const dropDownItem = document.querySelectorAll(".dropdown__item");
 const filterInput = document.querySelector("#filter-input");
 
 let tasks = [];
-let themeData = {darkTheme: false};
+let themeData = {darkTheme: false, filter: "all"};
 
 if (localStorage.getItem("tasks")) {
   tasks = JSON.parse(localStorage.getItem("tasks"));
