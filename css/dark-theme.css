@@ -1,0 +1,108 @@
+body {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.todo__item label {
+  color: var(--white);
+}
+
+.input__todo {
+  background-color: var(--black);
+  border: var(--white) 0.1rem solid;
+  color: var(--white);
+}
+
+.input__todo::placeholder {
+  color: #666666;
+}
+
+.input__todo:focus-visible {
+  outline: rgba(255, 255, 255, 0.4) 0.2rem solid;
+}
+
+#btn__search path {
+  fill: var(--white);
+}
+
+.btn__settings {
+  background-color: var(--purple);
+  color: var(--white);
+}
+
+.btn__settings:hover {
+  box-shadow: 0px 0px 4px 0px rgba(108, 99, 255, 1);
+}
+
+.todo__list::-webkit-scrollbar-track {
+  background-color: var(--white);
+}
+
+.todo__list::-webkit-scrollbar-thumb {
+  background-color: var(--black);
+  border: 0.1rem var(--white) solid;
+}
+
+.custom-checkbox {
+  border: var(--purple) 0.1rem solid;
+}
+
+.custom-checkbox::after {
+  background-color: var(--purple);
+}
+
+.completeTask {
+  color: #838282 !important;
+}
+
+.hr__item {
+  background-color: var(--purple);
+}
+
+#btn__add-task {
+  background-color: var(--purple);
+  box-shadow: 0px 0px 4px 0px rgba(108, 99, 255, 1);
+}
+
+#btn__add-task::after {
+  background-color: var(--white);
+}
+
+#btn__add-task::before {
+  background-color: var(--white);
+}
+
+#btn__add-task:hover {
+  border: 0.3rem var(--purple) solid;
+  background-color: #534cc2;
+}
+
+.note__new__wrapper {
+  background-color: rgba(37, 37, 37, 0.7);
+}
+
+.todo__title {
+  color: var(--white);
+}
+
+#note__new__form {
+  background-color: var(--black);
+  border: 0.1rem solid var(--white);
+}
+
+#cancel {
+  border: 0.1rem var(--purple) solid;
+  color: var(--purple);
+}
+
+#link_author {
+  color: var(--white);
+}
+
+.change-theme[data-theme="light"] {
+  display: block;
+}
+
+.change-theme[data-theme="dark"] {
+  display: none;
+}

@@ -1,0 +1,87 @@
+html,
+input,
+button,
+label {
+  cursor: none;
+}
+
+.customCursor__wrapper {
+  position: fixed;
+  display: none;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: exclusion;
+  pointer-events: none;
+  z-index: 9999999;
+  /* transition: all 0.15s ease; */
+}
+
+.customCursor {
+  width: 3rem;
+  height: 3rem;
+  pointer-events: none;
+  border-radius: 50%;
+  border: 0.1rem solid var(--white);
+  transition: all 0.15s ease;
+}
+
+.customCursorV {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0.1rem;
+  background: #fff;
+  transition: all 0.15s ease;
+}
+
+.customCursorH {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(90deg);
+  width: 0;
+  height: 0.1rem;
+  background: #fff;
+  transition: all 0.15s ease;
+}
+
+.customCursor__wrapper.customCursorPointer .customCursor {
+  padding: 3rem;
+}
+
+.customCursor__wrapper.customCursorPointer .customCursorV {
+  width: 2rem;
+}
+
+.customCursor__wrapper.customCursorPointer .customCursorH {
+  width: 2rem;
+}
+
+/* .customCursorPointer::after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 0.1rem;
+  height: 1rem;
+  border-radius: 0.5rem;
+  background-color: var(--white);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(90deg);
+  transition: 0.3s all;
+}
+
+.customCursorPointer::before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 0.1rem;
+  height: 1rem;
+  border-radius: 0.5rem;
+  background-color: var(--white);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(0);
+  transition: 0.3s all;
+} */
